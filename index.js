@@ -1,6 +1,6 @@
 let humanScore = 0;
 let computerScore = 0;
-
+// Rolls a random number between 0-2, and returns rock paper or scissors depending on the number rolled
 function getComputerChoice() {
 	const randomNumber = Math.floor(Math.random() * 3);
 	if (randomNumber === 0) {
@@ -11,16 +11,15 @@ function getComputerChoice() {
 		return 'scissors';
 	}
 }
+// Makes a prompt in the webpage that asks the user what their chose is, and returbs it in lowercase
 function getHumanChoice() {
 	return prompt('Choose rock, paper, or scissors').toLowerCase();
 }
-
+// plays a game of rock paper scissors, by running the function play round five times
 function playGame() {
+    // play round plays a round of rock paper scissors, by comparing computer selection and human selection 
 	function playRound(humanSelection, computerSelection) {
-		//  if((humanSelection == "rock" && computerSelection =="paper")){
-		//     console.log( "You lose! The computer chose Paper and you chose Rock."
-		// }
-		// else if ((humanSelection ==))
+
 
 		if (computerSelection == 'rock') {
 			if (humanSelection == 'rock') {

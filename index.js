@@ -44,3 +44,25 @@ function getComputerChoice() {
 	resultsDiv.innerHTML = `<p>You chose: ${human.charAt(0).toUpperCase() + human.slice(1)}</p>
 			<p>Computer chose: ${computer.charAt(0).toUpperCase() + computer.slice(1)}</p>
 			<p>${roundResult}</p>`;
+
+			rockButton.addEventListener('click', () => {
+		if (!gameOver) {
+			const computerChoice = getComputerChoice();
+			playRound('rock', computerChoice);
+		}
+	});
+
+	paperButton.addEventListener('click', () => {
+		if (!gameOver) {
+			const computerChoice = getComputerChoice();
+			playRound('paper', computerChoice);
+		}
+	});
+
+	scissorsButton.addEventListener('click', () => {
+		if (!gameOver) {
+			const computerChoice = getComputerChoice();
+			playRound('scissors', computerChoice);
+		}
+	});
+)
